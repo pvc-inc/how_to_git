@@ -148,6 +148,7 @@ tree
 clear 
 
 # Adding Files and Directories for Tracking
+
 tree
 git status
 nano File1InThisDirectory.extension
@@ -156,45 +157,54 @@ ctrl+x
 y
 git add File1InThisDirectory.extension
 git status
-git commit -m "I Modified File1InThisDirectory.extension in ProjectName"
+git commit -m "I modified File1InThisDirectory.extension in ProjectName"
 git push -u github master
 git status
-nano Directory1/FileInDirectory1.extension
+
+nano Directory1/FileInThisDirectory.extension
 I am modifying File1InThisDirectory.extension in Directory1
 ctrl+x
 y
 git add Directory1/File1InThisDirectory.extension 
 git addDirectory1/FileNInThisDirectory.extension
-git commit -m "I Modified File1InThisDirectory.extension in Directory1"
+git commit -m "I modified File1InThisDirectory.extension in Directory1"
+git status
 git push -u github master
 git status
+
 git add Directory2/File2InThisDirectory.extension
 nano Directory2/File2InThisDirectory.extension
-What happens if I mmodify a file after adding it?
+What happens if I modify a file after adding it to tracking?
 ctrl+x
 y
-git commit -m "I Modified File2InThisDirectory.extension in Directory2"
+git commit -m "I modified File2InThisDirectory.extension in Directory2"
 git status
 git add Directory2/File2InThisDirectory.extension
 git status
 git commit -m "I Modified File2InThisDirectory.extension in Directory2"
+git status
 git push -u github master
+git status
+
 nano Directory3/File3InThisDirectory.extension
-I Always add after modifying a file
+I Always add after modifying a file and commit
 ctrl+x
 y
 git add Directory3/File3InThisDirectory.extension
-git commit -m "I Modified File3InThisDirectory.extension in Directory3"
+git commit -m "I modified File3InThisDirectory.extension in Directory3"
 git push -u github master
 git status
 git add Directory3/
+
 git status
 nano DirectoryN/FileNInThisDirectory.extension
-I will Always Be Committing
+I will ALWAYS BE COMMITTING
 ctrl+x
 y
-git add Directory4/FileNInThisDirectory.extension
-git commit -m "I Modified FileNInThisDirectory.extension in DirectoryN"
+git add DirectoryN/FileNInThisDirectory.extension
+git commit -m "I modified FileNInThisDirectory.extension in DirectoryN"
+git push -u github master
+
 git status
 git add .
 git status
@@ -204,16 +214,23 @@ git diff --cached
 q
 git diff HEAD
 q
-git commit -am "I Added new Ffives to be tracked by git"
+git commit -m "I added new Ffives to be tracked by git"
 git log
+q
 git log --oneline
 git log --graph
+q
 git commit --amend -m "I Added new Files and Directories in ProjectName for git to track"
 git log
+q
 git log --oneline
 git log --merges
 git log --graph
+q
 git push -u github master
+git log --oneline
+git log --merges
+git log --graph
 git diff
 git status
 clear
