@@ -138,18 +138,43 @@ ls
 tree
 clear 
 
-#AddingFilesAndDirectories to Local Repository
+#Adding Files and Directories to Local Repository
 git status
 tree
+nano File1InThisDirectory.extension
+A few changes in File1InThisDirectory.extension
+ctrl+x
+y
 git add File1InThisDirectory.extension
 git status
-git add Directory1/File1InDirectory1.extension Directory1/FileNInDirectory1.extension
+git commit -m "Modified File1InThisDirectory.extension"
+git push -u origin master
 git status
-git add Directory2/File1InDirectory2.extension
+nano Directory1/FileInDirectory1.extension
+This is File 1 in Directory 1
+ctrl+x
+y
+git add Directory1/File1InThisDirectory.extension 
+git addDirectory1/FileNInThisDirectory.extension
+git commit -m "Modified File 1 in Directory"
+git push -u origin master
+git status
+git add Directory2/File1InThisDirectory.extension
+nano Directory2/File1InThisDirectory.extension
+What happens if I make a change after adding?
+ctrl+x
+y
+git commit -m "Modified File 1 in Directory2"
+git status
+git add Directory2/File1InThisDirectory.extension
+git status
+git commit -m "Modified File 1 in Directory2"
+git push -u origin master
+
 git status
 git add Directory3/
 git status
-git add -A
+git add .
 git status
 tree
 git diff
@@ -157,17 +182,18 @@ git diff --cached
 q
 git diff HEAD
 q
-git commit -am "Added new files"
+git commit -am "Added new Ffives"
 git log
 git log --oneline
 git log --graph
-git commit --amend -m "Added new Ffiles and Directories"
+git commit --amend -m "Added new Files and Directories"
 git log
 git log --oneline
 git log --merges
 git log --graph
 git push -u origin master
 git diff
+git status
 clear
 
 #Branching
