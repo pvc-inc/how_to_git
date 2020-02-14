@@ -261,7 +261,7 @@ touch file_from_a_branch.extension
 mkdir new_directory_from_a_branch
 touch new_directory_from_a_branch/File{1,2,3,4}InThisDirectory.extension
 git add -A
-git commit -am "Added New File and Directory in a_branch"
+git commit -am "I Added a new File and Directory in a_branch"
 git push origin a_branch
 git diff
 git diff master
@@ -279,18 +279,18 @@ git branch -a
 git diff master
 git merge master
 nano FileInThisDirectory.extension
-1 genius Idea to test in new_feature
+I had a Genius Idea and tested it in new_feature
 ctrl+X
 y
 git status
 git add .
-git commit -am "1 Genius Idea tested in new_feature"
+git commit -am "I had a Genius Idea and tested it in new_feature"
 git diff master
 git diff remotes/origin/new_feature
 git push origin new_feature
 git checkout master
 git merge --no-ff new_feature
-Had a Genius idea and tested it in a_new_branch
+I Had a Genius idea, tested it in new_feature and merged it into master
 # save and exit
 git diff
 git diff new_feature
@@ -301,6 +301,7 @@ git log
 git log --oneline
 git log --merges
 git log graph
+git branch -D new_feature
 clear
 
 #Tagging
@@ -336,11 +337,3 @@ git log
 git log --oneline
 git log --merges
 git log --graph
-
-# Cloning a repository
-cd ..
-mkdir SampleProject
-cd SampleProject
-git clone https://github.com/pvc-inc/ProjectName.git
-git checkout -b <username>Branch
-git push origin <username>Branch
