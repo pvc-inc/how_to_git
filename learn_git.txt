@@ -36,7 +36,7 @@ git status --help
 clear
 
 #CreatingANewRepository
-# Github.com > new repository > ProjectName
+# go to Github.com > new repository > ProjectName
 # Click Create repository
 
 mkdir ProjectName && cd ProjectName
@@ -179,6 +179,13 @@ git checkout -b a_new_branch
 git branch -a
 git status
 git checkout master
+git checkout -b a_dead_branch
+git branch -a
+git status
+git checkout master
+git branch -D a_dead_branch
+git branch -a
+git status
 ls
 tree
 git branch -a
