@@ -74,7 +74,7 @@ git remote -v
 git push -u origin master
 clear
 
-#KeepingFilesAndDirectoriesPrivate
+# Keeping Files And Directories Private
 cat .gitignore
 ls -a
 mkdir DirectoryNotToBeShared
@@ -100,6 +100,7 @@ git status
 git add DirectoryNotToBeShared/
 git add FileNotToBeShared.extension
 git status
+git push -u origin master
 clear
 
 touch File1InThisDirectory.extension 
