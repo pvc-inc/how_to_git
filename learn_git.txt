@@ -1,4 +1,6 @@
 # Learn git
+
+# Keywords
 git help
 git help -a
 q
@@ -36,7 +38,7 @@ q
 git status --help
 clear
 
-#Creating A New Repository
+# Creating A New Repository
 # go to https://github.com > Start A Project > ProjectName
 # Click Create repository
 
@@ -54,7 +56,7 @@ git log --merges
 git log --graph
 
 git add .
-git commit -m "first commit"
+git commit -m "I made a first commit"
 ls
 ls -a
 cd .git
@@ -90,7 +92,7 @@ git add .gitignore
 git diff
 git diff --cached
 git diff HEAD
-git commit -am "Created list of Files and Directories for git to ignore"
+git commit -am "I Created list of Files and Directories for git to ignore"
 git log
 git log --oneline
 git log --merges
@@ -141,37 +143,50 @@ clear
 git status
 tree
 nano File1InThisDirectory.extension
-A few changes in File1InThisDirectory.extension
+I am modifying File1InThisDirectory.extension
 ctrl+x
 y
 git add File1InThisDirectory.extension
 git status
-git commit -m "Modified File1InThisDirectory.extension"
+git commit -m "I Modified File1InThisDirectory.extension in ProjectName"
 git push -u origin master
 git status
 nano Directory1/FileInDirectory1.extension
-This is File 1 in Directory 1
+I am modifying File1InThisDirectory.extension in Directory1
 ctrl+x
 y
 git add Directory1/File1InThisDirectory.extension 
 git addDirectory1/FileNInThisDirectory.extension
-git commit -m "Modified File 1 in Directory"
+git commit -m "I Modified File1InThisDirectory.extension in Directory1"
 git push -u origin master
 git status
-git add Directory2/File1InThisDirectory.extension
-nano Directory2/File1InThisDirectory.extension
-What happens if I make a change after adding?
+git add Directory2/File2InThisDirectory.extension
+nano Directory2/File2InThisDirectory.extension
+What happens if I mmodify a file after adding it?
 ctrl+x
 y
-git commit -m "Modified File 1 in Directory2"
+git commit -m "I Modified File2InThisDirectory.extension in Directory2"
 git status
-git add Directory2/File1InThisDirectory.extension
+git add Directory2/File2InThisDirectory.extension
 git status
-git commit -m "Modified File 1 in Directory2"
+git commit -m "I Modified File2InThisDirectory.extension in Directory2"
 git push -u origin master
-
+nano Directory3/File3InThisDirectory.extension
+I Always add after modifying a file
+ctrl+x
+y
+git add Directory3/File3InThisDirectory.extension
+git commit -m "I Modified File3InThisDirectory.extension in Directory3"
+git push -u origin master
 git status
 git add Directory3/
+git status
+nano DirectoryN/FileNInThisDirectory.extension
+I will Always Be Committing
+ctrl+x
+y
+git add Directory4/FileNInThisDirectory.extension
+git commit -m "I Modified FileNInThisDirectory.extension in DirectoryN"
 git status
 git add .
 git status
@@ -185,7 +200,7 @@ git commit -am "Added new Ffives"
 git log
 git log --oneline
 git log --graph
-git commit --amend -m "Added new Files and Directories"
+git commit --amend -m "Added new Files and Directories in ProjectName"
 git log
 git log --oneline
 git log --merges
@@ -324,6 +339,9 @@ git log --merges
 git log --graph
 
 # Cloning a repository
-git clone <git_URL>
-git clone --depth <N> <git_URL>
-git clone -b <branch_name> <git_URL> --single-branch
+cd ..
+mkdir SampleProject
+cd SampleProject
+git clone https://github.com/pvc-inc/ProjectName.git
+git checkout -b <username>Branch
+git push origin <username>Branch
