@@ -5,6 +5,7 @@ sudo apt update
 sudo apt full-upgrade -y
 sudo apt install git -y
 sudo apt install tree
+sudo apt install pbcopy
 
 ssh-keygen -t rsa -C "<your_email_address>"
 pbcopy < ~/.ssh/id_rsa.pub # filename may vary, 
