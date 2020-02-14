@@ -63,7 +63,7 @@ cd .git
 tree
 cat description
 nano description
-ProjectName; a description of ProjectName
+ProjectName; a Git Repository
 Ctrl+X
 Y
 cat description
