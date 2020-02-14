@@ -235,7 +235,7 @@ git diff
 git status
 clear
 
-#Branching
+# Branching
 git status
 git branch
 git branch -a
@@ -251,6 +251,7 @@ git branch -m an_old_branch_name a_new_branch_name
 git branch -a
 git branch -v
 git branch -vv
+
 git branch a_branch
 git branch -a
 git checkout a_branch
@@ -275,10 +276,25 @@ git branch -a
 git status
 ls
 tree
+
 git branch -a
+git branch branch1
+git branch branch2
+git branch branch3
+git branch branchN
+git branch -a
+
 git push github a_branch
 git branch -a
 git push github a_new_branch
+git branch -a
+git push github branch1
+git branch -a
+git push github branch2
+git branch -a
+git push github branch3
+git branch -a
+git push github branchN
 git branch -a
 
 # Merging Changes
