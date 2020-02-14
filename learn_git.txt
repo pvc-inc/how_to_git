@@ -110,7 +110,7 @@ tree
 mkdir Directory{1,2,3,N}
 ls
 tree
-touch Directory{1,2,3,N}/File{1,2,3,N}InDirectory1.extension
+touch Directory{1,2,3,N}/File{1,2,3,N}InThisDirectory.extension
 touch Directory2/python_file.py
 touch Directory2/java_file.java
 touch Directory2/java_file.war
@@ -126,6 +126,8 @@ ls
 cd ../.. && pwd
 ls
 tree
+cd ..
+ls; tree
 clear 
 
 #AddingFilesAndDirectories to Local Repository
