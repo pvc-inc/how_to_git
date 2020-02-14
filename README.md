@@ -1,4 +1,4 @@
-#How to use Git
+#How to use this Repo
 
 - Open a Terminal
 - lines with "#" are comments or headers or instructions to do at GitHub.com
