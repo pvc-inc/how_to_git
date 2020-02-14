@@ -1,6 +1,7 @@
 # Learn git
 git help
 git help -a
+q
 git help -g
 git help attributes
 q
