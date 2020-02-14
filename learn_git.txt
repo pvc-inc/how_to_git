@@ -37,7 +37,7 @@ git status --help
 clear
 
 #Creating A New Repository
-# go to https://github.com > new repository > ProjectName
+# go to https://github.com > Start A Project > ProjectName
 # Click Create repository
 
 mkdir ProjectName && cd ProjectName
