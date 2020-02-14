@@ -149,8 +149,9 @@ clear
 
 # Adding Files and Directories for Tracking
 tree
+git status
 nano File1InThisDirectory.extension
-I am modifying File1InThisDirectory.extension
+I am modifying File1InThisDirectory.extension in ProjectName
 ctrl+x
 y
 git add File1InThisDirectory.extension
