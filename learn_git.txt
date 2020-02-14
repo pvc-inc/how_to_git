@@ -92,7 +92,7 @@ git add .gitignore
 git diff
 git diff --cached
 git diff HEAD
-git commit -am "I Created list of Files and Directories for git to ignore"
+git commit -am "I Created list of Files and Directories for git to not track"
 git log
 git log --oneline
 git log --merges
@@ -139,8 +139,7 @@ ls
 tree
 clear 
 
-#Adding Files and Directories to Local Repository
-git status
+#Adding Files and Directories
 tree
 nano File1InThisDirectory.extension
 I am modifying File1InThisDirectory.extension
@@ -196,11 +195,11 @@ git diff --cached
 q
 git diff HEAD
 q
-git commit -am "Added new Ffives"
+git commit -am "I Added new Ffives to be tracked by git"
 git log
 git log --oneline
 git log --graph
-git commit --amend -m "Added new Files and Directories in ProjectName"
+git commit --amend -m "I Added new Files and Directories in ProjectName for git to track"
 git log
 git log --oneline
 git log --merges
