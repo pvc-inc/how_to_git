@@ -76,9 +76,11 @@ clear
 
 #KeepingFilesAndDirectoriesPrivate
 cat .gitignore
+ls -a
 mkdir DirectoryNotToBeShared
 echo "DirectoryNotToBeShared/" >> .gitignore
 cat .gitignore
+ls -a
 touch FileNotToBeShared.extension
 echo "FileNotToBeShared.extension" >> .gitignore
 cat .gitignore
