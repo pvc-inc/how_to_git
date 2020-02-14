@@ -68,7 +68,6 @@ cat description
 cd ..
 clear
 
-git remote add origin https://github.com/<username>/ProjectName
 git remote add origin git@github.com:<username>/ProjectName
 git remote -v
 git push -u origin master
