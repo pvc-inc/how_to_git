@@ -49,16 +49,15 @@ git status
 git diff
 git diff --cached
 git diff HEAD
-git commit -m "This does nothing when there is nothing to commit"
+git commit -m "I cannot commit since have not told git to track anything yet"
 git log
 git log --oneline
 git log --merges
 git log --graph
 
-git add .
-git commit -m "I made a first commit"
+git add README.md
+git commit -m "I made the first commit"
 ls
-ls -a
 cd .git
 tree
 cat description
@@ -70,9 +69,9 @@ cat description
 cd ..
 clear
 
-git remote add origin git@github.com:<username>/ProjectName
+git remote add github git@github.com:<username>/ProjectName
 git remote -v
-git push -u origin master
+git push -u github master
 clear
 
 # Keeping Files And Directories Private
@@ -101,7 +100,7 @@ git status
 git add DirectoryNotToBeShared/
 git add FileNotToBeShared.extension
 git status
-git push -u origin master
+git push -u github master
 clear
 
 # Managing Files and Directories
@@ -148,7 +147,7 @@ y
 git add File1InThisDirectory.extension
 git status
 git commit -m "I Modified File1InThisDirectory.extension in ProjectName"
-git push -u origin master
+git push -u github master
 git status
 nano Directory1/FileInDirectory1.extension
 I am modifying File1InThisDirectory.extension in Directory1
@@ -157,7 +156,7 @@ y
 git add Directory1/File1InThisDirectory.extension 
 git addDirectory1/FileNInThisDirectory.extension
 git commit -m "I Modified File1InThisDirectory.extension in Directory1"
-git push -u origin master
+git push -u github master
 git status
 git add Directory2/File2InThisDirectory.extension
 nano Directory2/File2InThisDirectory.extension
@@ -169,14 +168,14 @@ git status
 git add Directory2/File2InThisDirectory.extension
 git status
 git commit -m "I Modified File2InThisDirectory.extension in Directory2"
-git push -u origin master
+git push -u github master
 nano Directory3/File3InThisDirectory.extension
 I Always add after modifying a file
 ctrl+x
 y
 git add Directory3/File3InThisDirectory.extension
 git commit -m "I Modified File3InThisDirectory.extension in Directory3"
-git push -u origin master
+git push -u github master
 git status
 git add Directory3/
 git status
@@ -204,7 +203,7 @@ git log
 git log --oneline
 git log --merges
 git log --graph
-git push -u origin master
+git push -u github master
 git diff
 git status
 clear
@@ -250,9 +249,9 @@ git status
 ls
 tree
 git branch -a
-git push origin a_branch
+git push github a_branch
 git branch -a
-git push origin a_new_branch
+git push github a_new_branch
 git branch -a
 
 # Merging Changes
@@ -262,17 +261,17 @@ mkdir new_directory_from_a_branch
 touch new_directory_from_a_branch/File{1,2,3,4}InThisDirectory.extension
 git add -A
 git commit -am "I Added a new File and Directory in a_branch"
-git push origin a_branch
+git push github a_branch
 git diff
 git diff master
 git checkout master
-git diff remotes/origin/master
+git diff remotes/github/master
 git diff a_branch
 git merge a_branch
 git diff
 git diff a_branch
-git diff remotes/origin/master
-git push origin master
+git diff remotes/github/master
+git push github master
 
 git checkout -b new_feature
 git branch -a
@@ -286,17 +285,17 @@ git status
 git add .
 git commit -am "I had a Genius Idea and tested it in new_feature"
 git diff master
-git diff remotes/origin/new_feature
-git push origin new_feature
+git diff remotes/github/new_feature
+git push github new_feature
 git checkout master
 git merge --no-ff new_feature
 I Had a Genius idea, tested it in new_feature and merged it into master
 # save and exit
 git diff
 git diff new_feature
-git diff remotes/origin/master
+git diff remotes/github/master
 git status
-git push origin master
+git push github master
 git log
 git log --oneline
 git log --merges
@@ -329,9 +328,9 @@ git show any_tag
 git show non_existent_tag
 clear
 
-git push origin v0.1
-git push origin vN.M
-git push origin --tags
+git push github v0.1
+git push github vN.M
+git push github --tags
 
 git log
 git log --oneline
