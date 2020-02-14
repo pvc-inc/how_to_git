@@ -7,7 +7,8 @@ sudo apt install git -y
 sudo apt install tree
 
 ssh-keygen -t rsa -C "<your_email_address>"
-pbcopy < ~/.ssh/id_rsa.pub # filename may vary, use the filename given from the sshkeygen generation
+pbcopy < ~/.ssh/id_rsa.pub # filename may vary, 
+# use the filename given from the sshkeygen generation
 
 # Go to Github
 # Create/Login to Account
