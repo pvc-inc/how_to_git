@@ -36,7 +36,7 @@ q
 git status --help
 clear
 
-#CreatingANewRepository
+#Creating A New Repository
 # go to Github.com > new repository > ProjectName
 # Click Create repository
 
