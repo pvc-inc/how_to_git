@@ -103,26 +103,26 @@ git status
 git push -u origin master
 clear
 
+# Managing Files and Directories
 touch File{1,2,3,N}InThisDirectory.extension
 ls
 tree
-mkdir Directory1
-touch Directory1/File1InDirectory1.extension
-touch Directory1/FileNInDirectory1.extension
-mkdir Directory2
-touch Directory2/File1InDirectory2.extension
+mkdir Directory{1,2,3,N}
+ls
+tree
+touch Directory{1,2,3,N}/File{1,2,3,N}InDirectory1.extension
 touch Directory2/python_file.py
 touch Directory2/java_file.java
+touch Directory2/java_file.war
 touch Directory3/html_file.html
-mkdir Directory3 && cd Directory3 && pwd
+touch Directory3/js_file.js
+cd Directory3 && pwd
 mkdir ChildOfDirectory3 && cd ChildOfDirectory3
 mkdir ChildOfChildOfDirectory3 && cd ChildOfChildOfDirectory3
 pwd
-touch file1.txt file2.txt file3.txt fileN.txt
+touch textfile{1,2,3,N}.txt
 ls
 cd ../.. && pwd
-mkdir DirectoryN
-touch DirectoryN/FileInDirectoryN.extension
 ls
 tree
 clear 
