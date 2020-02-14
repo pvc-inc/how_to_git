@@ -51,7 +51,7 @@ nano description
 ProjectName; a description of ProjectName
 Ctrl+X
 Y
-nano description
+cat description
 cd ..
 git status
 git diff
