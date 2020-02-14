@@ -197,15 +197,20 @@ clear
 
 #Branching
 git status
+git branch
 git branch -a
+git branch -v
+git branch -vv
 git branch a_new_branch
-git branch -a
+git branch
 git branch -d a_new_branch
-git branch -a
+git branch
 git branch an_old_branch_name
 git branch -a
 git branch -m an_old_branch_name a_new_branch_name
 git branch -a
+git branch -v
+git branch -vv
 git branch a_branch
 git branch -a
 git checkout a_branch
@@ -236,7 +241,7 @@ git branch -a
 git push origin a_new_branch
 git branch -a
 
-#MergingChanges
+# Merging Changes
 git checkout a_branch
 touch file_from_a_branch.extension
 mkdir new_directory_from_a_branch
