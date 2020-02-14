@@ -103,10 +103,7 @@ git status
 git push -u origin master
 clear
 
-touch File1InThisDirectory.extension 
-touch File2InThisDirectory.extension 
-touch File3InThisDirectory.extension
-touch File4InThisDirectory.extension
+touch File{1,2,3,N}InThisDirectory.extension
 ls
 tree
 mkdir Directory1
