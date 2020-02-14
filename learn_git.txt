@@ -301,20 +301,24 @@ git branch -a
 git checkout a_branch
 touch file_from_a_branch.extension
 mkdir new_directory_from_a_branch
-touch new_directory_from_a_branch/File{1,2,3,4}InThisDirectory.extension
-git add -A
-git commit -am "I Added a new File and Directory in a_branch"
+touch new_directory_from_a_branch/File{1,2,3,N}InThisDirectory.extension
+git status
+git add .
+git commit -a "I added a new File and Directory in a_branch"
+git diff github/a_branch
 git push github a_branch
 git diff
 git diff master
 git checkout master
-git diff remotes/github/master
+git diff github/master
 git diff a_branch
 git merge a_branch
 git diff
 git diff a_branch
-git diff remotes/github/master
+git diff github/master
+git status
 git push github master
+git status
 
 git checkout -b new_feature
 git branch -a
