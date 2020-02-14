@@ -116,18 +116,26 @@ touch Directory2/java_file.java
 touch Directory2/java_file.war
 touch Directory3/html_file.html
 touch Directory3/javscript_file.js
+touch DirectoryN/compressed_file.zip
+touch DirectoryN/tape_archive_file.tar
 tree
-cd Directory3 && pwd
-mkdir ChildOfDirectory3 && cd ChildOfDirectory3
-mkdir ChildOfChildOfDirectory3 && cd ChildOfChildOfDirectory3
+cd Directory3
+pwd
+mkdir ChildOfDirectory3
+cd ChildOfDirectory3
+mkdir ChildOfChildOfDirectory3
+cd ChildOfChildOfDirectory3
 pwd
 touch textfile{1,2,3,N}.txt
 ls
-cd ../.. && pwd
+tree
+cd ../..
+pwd
 ls
 tree
 cd ..
-ls; tree
+ls
+tree
 clear 
 
 #AddingFilesAndDirectories to Local Repository
