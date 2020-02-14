@@ -116,6 +116,7 @@ touch Directory2/java_file.java
 touch Directory2/java_file.war
 touch Directory3/html_file.html
 touch Directory3/javscript_file.js
+tree
 cd Directory3 && pwd
 mkdir ChildOfDirectory3 && cd ChildOfDirectory3
 mkdir ChildOfChildOfDirectory3 && cd ChildOfChildOfDirectory3
