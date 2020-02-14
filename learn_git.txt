@@ -116,12 +116,16 @@ mkdir Directory{1,2,3,N}
 ls
 tree
 touch Directory{1,2,3,N}/File{1,2,3,N}InThisDirectory.extension
+ls
+tree
 touch Directory2/python_file.py
 touch Directory2/java_file.java
 touch Directory2/java_file.war
 touch Directory3/html_file.html
 touch Directory3/javscript_file.js
 touch DirectoryN/compressed_file.zip
+touch DirectoryN/compressed_file.bz2
+touch DirectoryN/compressed_file.xz
 touch DirectoryN/tape_archive_file.tar
 tree
 cd Directory3
