@@ -11,12 +11,13 @@ ssh-keygen -t rsa -C "<your_email_address>"
 pbcopy < ~/.ssh/id_rsa.pub # filename may vary, 
 # use the filename given from the sshkeygen generation
 
-# Go to Github
+# Go to Github or Bitbucket
 # Create/Login to Account
-# ProfilePic > Settings > SSH and GPG Keys
+# Profile > Settings > SSH and GPG Keys # GitHub
+# Profile > Settings > SSH # Bitbucket
 # New SSH key
 # Paste Key > Add SSH Key
-ssh -T git@github.com
+ssh -T git@<github.com|bitbucket.org>
 
 git config --global user.name "<your_name>"
 git config --global user.email "<your_email_address>"
