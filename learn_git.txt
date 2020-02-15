@@ -38,8 +38,12 @@ q
 git status --help
 clear
 
-# Creating A New Repository
+# Creating A New Repository with GitHub
 # go to https://github.com > Start A Project > ProjectName
+# Click Create repository
+
+# Creating a New Repository with BitBucket
+# go to https://bitbucket.org > Create Repository > ProjectName
 # Click Create repository
 
 mkdir ProjectName && cd ProjectName
@@ -69,7 +73,11 @@ cat description
 cd ..
 clear
 
-git remote add github git@github.com:<username>/ProjectName
+# <text> = Replace with your own text
+# x|y = you can use x or y
+# <x|y> = x or y are options but you can replace with your own text
+
+git remote add <github|bitbucket|origin> git@<github.com|bitbucket.org>:<username>/ProjectName
 git remote -v
 git push -u github master
 clear
