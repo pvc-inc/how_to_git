@@ -38,12 +38,13 @@ q
 git status --help
 clear
 
+PROJECTNAME=Name of Project
 # Creating A New Repository
-# go to https://github.com > Start A Project > ProjectName
+# go to https://github.com > Start A Project > $PROJECTNAME
 # Click Create repository
 
-mkdir ProjectName && cd ProjectName
-echo "# ProjectName" >> README.md
+mkdir $PROJECTNAME && cd $PROJECTNAME
+echo "# $PROJECTNAME" >> README.md
 git init                # mkdir .git and add important files
 git status
 git diff
@@ -62,14 +63,14 @@ cd .git
 tree
 cat description
 nano description
-ProjectName; a Git Repository
+$PROJECTNAME; a Git Repository
 Ctrl+X
 Y
 cat description
 cd ..
 clear
 
-git remote add github git@github.com:<username>/ProjectName
+git remote add github git@github.com:<username>/$PROJECTNAME
 git remote -v
 git push -u github master
 clear
@@ -152,12 +153,12 @@ clear
 tree
 git status
 nano File1InThisDirectory.extension
-I am modifying File1InThisDirectory.extension in ProjectName
+I am modifying File1InThisDirectory.extension in $PROJECTNAME
 ctrl+x
 y
 git add File1InThisDirectory.extension
 git status
-git commit -m "I modified File1InThisDirectory.extension in ProjectName"
+git commit -m "I modified File1InThisDirectory.extension in $PROJECTNAME"
 git push -u github master
 git status
 
@@ -220,7 +221,7 @@ q
 git log --oneline
 git log --graph
 q
-git commit --amend -m "I Added new Files and Directories in ProjectName for git to track"
+git commit --amend -m "I Added new Files and Directories in $PROJECTNAME for git to track"
 git log
 q
 git log --oneline
