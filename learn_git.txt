@@ -45,6 +45,7 @@ PROJECTNAME=Name of Project
 
 mkdir $PROJECTNAME && cd $PROJECTNAME
 echo "# $PROJECTNAME" >> README.md
+
 git init                # mkdir .git and add important files
 git status
 git diff
@@ -70,7 +71,12 @@ cat description
 cd ..
 clear
 
-git remote add github git@github.com:<username>/$PROJECTNAME
+# <text> = Replace with your own text
+# x|y = you can use x or y
+# <x|y> = x or y are options but you can replace with your own text
+
+git remote add <github|bitbucket|origin> git@<github.com|bitbucket.org>:<username>/$PROJECTNAME
+
 git remote -v
 git push -u github master
 clear
