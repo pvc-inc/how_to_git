@@ -1,5 +1,5 @@
 # learn git pre-requisites
-# you only need to do this the first time
+# Is this your first time with git on this machine? do this
 # apt = apt|brew|yum
 sudo apt update
 sudo apt full-upgrade -y
